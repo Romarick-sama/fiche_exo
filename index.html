@@ -26,18 +26,118 @@
                 
                 <div class="exercise">
                     <h3>Exercice 1 : Résoudre les équations</h3>
-                    <div class="equation">a) 3x + 7 = 22</div>
-                    <div class="equation">b) 5x - 12 = 3x + 8</div>
-                    <div class="equation">c) 7(x - 2) = 3x + 6</div>
-                    <div class="equation">d) 2(3x + 1) - 4(x - 3) = 18</div>
+                    <div class="equation">
+                    a) 3x + 7 = 22<br>
+                    x = <input type="number" id="rep1">
+                    <button onclick="verifier('rep1', 5, 'res1')">Vérifier</button>
+                    <span id="res1"></span>
+                </div>
+
+                <div class="equation">
+                    b) 5x - 12 = 3x + 8<br>
+                    x = <input type="number" id="rep2">
+                    <button onclick="verifier('rep2', 10, 'res2')">Vérifier</button>
+                    <span id="res2"></span>
+                </div>
+
+                <div class="equation">
+                    c) 7x - 14 = 3x + 6<br>
+                    x = <input type="number" id="rep3">
+                    <button onclick="verifier('rep3', 5, 'res3')">Vérifier</button>
+                    <span id="res3"></span>
+                </div>
+
+                <div class="equation">
+                    d) 6x + 2 - 4x + 12 = 18<br>
+                    x = <input type="number" id="rep4">
+                    <button onclick="verifier('rep4', 2, 'res4')">Vérifier</button>
+                    <span id="res4"></span>
+                </div>
+
                     <button class="btn" onclick="toggleSolution('sol1')">Voir les solutions</button>
                     <div id="sol1" class="solution">
                         <h4>Solutions :</h4>
                         <div class="steps">
-                            <div class="step"><strong>a)</strong> 3x + 7 = 22 → 3x = 15 → <strong>x = 5</strong></div>
-                            <div class="step"><strong>b)</strong> 5x - 12 = 3x + 8 → 2x = 20 → <strong>x = 10</strong></div>
-                            <div class="step"><strong>c)</strong> 7x - 14 = 3x + 6 → 4x = 20 → <strong>x = 5</strong></div>
-                            <div class="step"><strong>d)</strong> 6x + 2 - 4x + 12 = 18 → 2x = 4 → <strong>x = 2</strong></div>
+
+                            <!-- a) déjà fait -->
+                            <div class="step">
+                                <strong>a)</strong> 
+                                <span class="eq">3x + 7 = 22</span> → 
+                                <span class="soustraction">3x + 7 - 7 = 22 - 7</span> → 
+                                <span class="fraction">
+                                    <span class="top">3x</span>
+                                    <span class="bottom">3</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">15</span>
+                                    <span class="bottom">3</span> 
+                                </span> → 
+                                <span class="resultat">x = 5</span>
+                            </div>
+
+                            <!-- b) -->
+                            <div class="step">
+                                <strong>b)</strong> 
+                                <span class="eq">5x - 12 = 3x + 8</span> → 
+                                <span class="addition">5x - 12 + 12 = 3x + 8 + 12</span> → 
+                                <span class="eq">5x = 3x + 20</span> → 
+                                <span class="soustraction">5x - 3x = 3x - 3x + 20</span> → 
+                                <span class="eq">2x = 20</span> → 
+                                <span class="fraction">
+                                    <span class="top">2x</span>
+                                    <span class="bottom">2</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">20</span>
+                                    <span class="bottom">2</span>
+                                </span> → 
+                                <span class="resultat">x = 10</span>
+                            </div>
+
+                            <!-- c) -->
+                            <div class="step">
+                                <strong>c)</strong> 
+                                <span class="eq">7(x - 2) = 3x + 6</span> → 
+                                <span class="eq">7x - 14 = 3x + 6</span> → 
+                                <span class="addition">7x - 14 + 14 = 3x + 6 + 14</span> →
+                                <span class="eq">7x = 3x + 20</span> →
+                                <span class="soustraction">7x - 3x = 3x - 3x + 20</span> → 
+                                <span class="eq">4x = 20</span> → 
+                                <span class="fraction">
+                                    <span class="top">4x</span>
+                                    <span class="bottom">4</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">20</span>
+                                    <span class="bottom">4</span>
+                                </span> → 
+                                <span class="resultat">x = 5</span>
+                            </div>
+
+                            <!-- d) -->
+                            <div class="step">
+                                <strong>d)</strong> 
+                                <span class="eq">2(3x + 1) - 4(x - 3) = 18</span> → 
+                                <span class="eq">6x + 2 - 4x + 12 = 18</span> → 
+                                <span class="multiplication">6x - 4x + 2 + 12 = 18</span> → 
+                                <span class="eq"> 2x + 14 = 18</span> → 
+                                <span class="soustraction">2x + 14 - 14 = 18 - 14</span> → 
+                                <span class="eq">2x = 4</span> → 
+                                <span class="fraction">
+                                    <span class="top">2x</span>
+                                    <span class="bottom">2</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">4</span>
+                                    <span class="bottom">2</span>
+                                </span> → 
+                                <span class="resultat">x = 2</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -288,103 +388,6 @@
         </div>
     </div>
 
-    <script>
-        let qcmScore = 0;
-
-        function showTab(tabName) {
-            // Masquer tous les contenus
-            const contents = document.querySelectorAll('.tab-content');
-            contents.forEach(content => content.classList.remove('active'));
-
-            // Masquer tous les onglets actifs
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => tab.classList.remove('active'));
-
-            // Afficher le contenu sélectionné
-            document.getElementById(tabName).classList.add('active');
-
-            // Activer l'onglet cliqué
-            event.target.classList.add('active');
-        }
-
-        function toggleSolution(id) {
-            const solution = document.getElementById(id);
-            solution.classList.toggle('show');
-        }
-
-        function checkProblem1() {
-            const julie = parseInt(document.getElementById('prob1_julie').value);
-            const paul = parseInt(document.getElementById('prob1_paul').value);
-            const result = document.getElementById('result1');
-
-            if (julie === 12 && paul === 16) {
-                result.className = 'result correct';
-                result.innerHTML = '✅ Excellent ! Julie a bien 12 ans et Paul 16 ans.';
-            } else {
-                result.className = 'result incorrect';
-                result.innerHTML = '❌ Ce n\'est pas correct. Vérifie tes calculs ! Indice : pose l\'équation avec x = âge de Julie.';
-            }
-        }
-
-        function checkProblem2() {
-            const largeur = parseInt(document.getElementById('prob2_largeur').value);
-            const longueur = parseInt(document.getElementById('prob2_longueur').value);
-            const result = document.getElementById('result2');
-
-            if (largeur === 10 && longueur === 18) {
-                result.className = 'result correct';
-                result.innerHTML = '✅ Parfait ! La largeur est 10 cm et la longueur 18 cm.';
-            } else {
-                result.className = 'result incorrect';
-                result.innerHTML = '❌ Ce n\'est pas correct. Pense au périmètre : 2(L + l) = 56.';
-            }
-        }
-
-        function checkQCM() {
-            qcmScore = 0;
-            let totalQuestions = 10;
-
-            // Vérifier chaque question
-            for (let i = 1; i <= totalQuestions; i++) {
-                const selected = document.querySelector(`input[name="q${i}"]:checked`);
-                if (selected && selected.dataset.correct) {
-                    qcmScore++;
-                }
-            }
-
-            // Afficher le résultat
-            const resultDiv = document.getElementById('qcm-result');
-            const scoreDiv = document.getElementById('score');
-            scoreDiv.textContent = `Score : ${qcmScore}/${totalQuestions}`;
-
-            if (qcmScore === totalQuestions) {
-                resultDiv.className = 'result correct';
-                resultDiv.innerHTML = '🎉 Parfait ! Tu as tout juste ! Tu maîtrises les équations du 1er degré !';
-            } else if (qcmScore >= totalQuestions * 0.7) {
-                resultDiv.className = 'result correct';
-                resultDiv.innerHTML = `✅ Très bien ! Tu as ${qcmScore} bonnes réponses sur ${totalQuestions}. Continue comme ça !`;
-            } else if (qcmScore >= totalQuestions * 0.5) {
-                resultDiv.className = 'result incorrect';
-                resultDiv.innerHTML = `⚠️ Pas mal ! Tu as ${qcmScore} bonnes réponses sur ${totalQuestions}. Révise encore un peu.`;
-            } else {
-                resultDiv.className = 'result incorrect';
-                resultDiv.innerHTML = `❌ Tu as ${qcmScore} bonnes réponses sur ${totalQuestions}. Reprends les exercices et réessaie !`;
-            }
-
-            // Scroll vers le résultat
-            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-
-        // Ajouter un effet sur les options du QCM
-        document.addEventListener('DOMContentLoaded', function() {
-            const qcmOptions = document.querySelectorAll('.qcm-option');
-            qcmOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    const radio = this.querySelector('input[type="radio"]');
-                    radio.checked = true;
-                });
-            });
-        });
-    </script>
+    <script src="script.js"> </script>
 </body>
 </html>

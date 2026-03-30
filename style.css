@@ -245,3 +245,41 @@ input[type="text"]:focus, input[type="number"]:focus {
 .step:last-child {
     border-bottom: none;
 }
+
+.eq {
+    color: #000000; /* blue */
+}
+
+.addition {
+    color: #fd8f00; /* orange */
+}
+.soustraction {
+    color: #ff0000; /* red */
+}
+
+.multiplication {
+    color: #00ccff; /* lightblue */
+}
+
+.division {
+    color: #df6dcf; /* pink */
+}
+
+.resultat {
+    color: #2ecc71; /* green */
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;
+    color: #df6dcf;
+}
+
+.fraction .top {
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.fraction .bottom {
+    display: block;
+}
