@@ -10,7 +10,14 @@ function verifier(inputId, bonneReponse, resultId) {
         return;
     }
 
-    if (Number(valeur) === bonneReponse) {
+    let isCorrect = false;
+    if (typeof bonneReponse === 'string') {
+        isCorrect = valeur.toLowerCase() === bonneReponse.toLowerCase();
+    } else {
+        isCorrect = Number(valeur) === bonneReponse;
+    }
+
+    if (isCorrect) {
         result.innerHTML = "✅ Correct";
         result.style.color = "green";
     } else {

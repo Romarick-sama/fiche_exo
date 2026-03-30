@@ -27,32 +27,32 @@
                 <div class="exercise">
                     <h3>Exercice 1 : Résoudre les équations</h3>
                     <div class="equation">
-                    a) 3x + 7 = 22<br>
-                    x = <input type="number" id="rep1">
-                    <button onclick="verifier('rep1', 5, 'res1')">Vérifier</button>
-                    <span id="res1"></span>
-                </div>
+                        a) 3x + 7 = 22<br>
+                        x = <input type="number" id="rep1">
+                        <button onclick="verifier('rep1', 5, 'res1')">Vérifier</button>
+                        <span id="res1"></span>
+                    </div>
 
-                <div class="equation">
-                    b) 5x - 12 = 3x + 8<br>
-                    x = <input type="number" id="rep2">
-                    <button onclick="verifier('rep2', 10, 'res2')">Vérifier</button>
-                    <span id="res2"></span>
-                </div>
+                    <div class="equation">
+                        b) 5x - 12 = 3x + 8<br>
+                        x = <input type="number" id="rep2">
+                        <button onclick="verifier('rep2', 10, 'res2')">Vérifier</button>
+                        <span id="res2"></span>
+                    </div>
 
-                <div class="equation">
-                    c) 7x - 14 = 3x + 6<br>
-                    x = <input type="number" id="rep3">
-                    <button onclick="verifier('rep3', 5, 'res3')">Vérifier</button>
-                    <span id="res3"></span>
-                </div>
+                    <div class="equation">
+                        c) 7x - 14 = 3x + 6<br>
+                        x = <input type="number" id="rep3">
+                        <button onclick="verifier('rep3', 5, 'res3')">Vérifier</button>
+                        <span id="res3"></span>
+                    </div>
 
-                <div class="equation">
-                    d) 6x + 2 - 4x + 12 = 18<br>
-                    x = <input type="number" id="rep4">
-                    <button onclick="verifier('rep4', 2, 'res4')">Vérifier</button>
-                    <span id="res4"></span>
-                </div>
+                    <div class="equation">
+                        d) 6x + 2 - 4x + 12 = 18<br>
+                        x = <input type="number" id="rep4">
+                        <button onclick="verifier('rep4', 2, 'res4')">Vérifier</button>
+                        <span id="res4"></span>
+                    </div>
 
                     <button class="btn" onclick="toggleSolution('sol1')">Voir les solutions</button>
                     <div id="sol1" class="solution">
@@ -143,22 +143,132 @@
                 </div>
 
                 <div class="exercise">
-                    <h3>Exercice 2 : Encore plus d'équations</h3>
-                    <div class="equation">a) 8x - 15 = 4x + 9</div>
-                    <div class="equation">b) 6(x + 3) = 2(x - 1)</div>
-                    <div class="equation">c) 5(2x - 3) - 3(x + 2) = 11</div>
-                    <div class="equation">d) 9x + 4 = 7x - 12</div>
-                    <button class="btn" onclick="toggleSolution('sol2')">Voir les solutions</button>
-                    <div id="sol2" class="solution">
-                        <h4>Solutions :</h4>
-                        <div class="steps">
-                            <div class="step"><strong>a)</strong> 8x - 15 = 4x + 9 → 4x = 24 → <strong>x = 6</strong></div>
-                            <div class="step"><strong>b)</strong> 6x + 18 = 2x - 2 → 4x = -20 → <strong>x = -5</strong></div>
-                            <div class="step"><strong>c)</strong> 10x - 15 - 3x - 6 = 11 → 7x = 32 → <strong>x = 32/7</strong></div>
-                            <div class="step"><strong>d)</strong> 9x + 4 = 7x - 12 → 2x = -16 → <strong>x = -8</strong></div>
+                <h3>Exercice 2 : Encore plus d'équations</h3>
+
+                <div class="equation">
+                    a) 8x - 15 = 4x + 9<br>
+                    x = <input type="number" id="rep5">
+                    <button onclick="verifier('rep5', 6, 'res5')">Vérifier</button>
+                    <span id="res5"></span>
+                </div>
+
+                <div class="equation">
+                    b) 6(x + 3) = 2(x - 1)<br>
+                    x = <input type="number" id="rep6">
+                    <button onclick="verifier('rep6', -5, 'res6')">Vérifier</button>
+                    <span id="res6"></span>
+                </div>
+
+                <div class="equation">
+                    c) 5(2x - 3) - 3(x + 2) = 11<br>
+                    x = <input type="number" id="rep7">
+                    <button onclick="verifier('rep7', 32/7, 'res7')">Vérifier</button>
+                    <span id="res7"></span>
+                </div>
+
+                <div class="equation">
+                    d) 9x + 4 = 7x - 12<br>
+                    x = <input type="number" id="rep8">
+                    <button onclick="verifier('rep8', -8, 'res8')">Vérifier</button>
+                    <span id="res8"></span>
+                </div>
+
+                <button class="btn" onclick="toggleSolution('sol2')">Voir les solutions</button>
+
+                <div id="sol2" class="solution">
+                    <h4>Solutions :</h4>
+                    <div class="steps">
+
+                        <!-- a) -->
+                        <div class="step">
+                            <strong>a)</strong> 
+                            <span class="eq">8x - 15 = 4x + 9</span> → 
+                            <span class="addition">8x - 15 + 15 = 4x + 9 + 15</span> → 
+                            <span class="eq">8x = 4x + 24</span> → 
+                            <span class="soustraction">8x - 4x = 4x - 4x + 24</span> → 
+                            <span class="eq">4x = 24</span> → 
+                            <span class="fraction">
+                                <span class="top">4x</span>
+                                <span class="bottom">4</span>
+                            </span>
+                            = 
+                            <span class="fraction">
+                                <span class="top">24</span>
+                                <span class="bottom">4</span>
+                            </span> → 
+                            <span class="resultat">x = 6</span>
                         </div>
+
+                        <!-- b) -->
+                        <div class="step">
+                            <strong>b)</strong> 
+                            <span class="eq">6(x + 3) = 2(x - 1)</span> → 
+                            <span class="eq">6x + 18 = 2x - 2</span> → 
+                            <span class="soustraction">6x + 18 - 18 = 2x - 2 - 18</span> → 
+                            <span class="eq">6x = 2x - 20</span> → 
+                            <span class="soustraction">6x - 2x = 2x - 2x - 20</span> → 
+                            <span class="eq">4x = -20</span> → 
+                            <span class="fraction">
+                                <span class="top">4x</span>
+                                <span class="bottom">4</span>
+                            </span>
+                            = 
+                            <span class="fraction">
+                                <span class="top">-20</span>
+                                <span class="bottom">4</span>
+                            </span> → 
+                            <span class="resultat">x = -5</span>
+                        </div>
+
+                        <!-- c) -->
+                        <div class="step">
+                            <strong>c)</strong> 
+                            <span class="eq">5(2x - 3) - 3(x + 2) = 11</span> → 
+                            <span class="eq">10x - 15 - 3x - 6 = 11</span> → 
+                            <span class="multiplication">10x - 3x - 15 - 6 = 11</span> → 
+                            <span class="eq">7x - 21 = 11</span> → 
+                            <span class="addition">7x - 21 + 21 = 11 + 21</span> → 
+                            <span class="eq">7x = 32</span> → 
+                            <span class="fraction">
+                                <span class="top">7x</span>
+                                <span class="bottom">7</span>
+                            </span>
+                            = 
+                            <span class="fraction">
+                                <span class="top">32</span>
+                                <span class="bottom">7</span>
+                            </span> → 
+                            <span class="resultat">x = 
+                                <span class="fraction">
+                                    <span class="top">32</span>
+                                    <span class="bottom">7</span>
+                                </span>
+                            </span>
+                        </div>
+
+                        <!-- d) -->
+                        <div class="step">
+                            <strong>d)</strong> 
+                            <span class="eq">9x + 4 = 7x - 12</span> → 
+                            <span class="soustraction">9x + 4 - 4 = 7x - 12 - 4</span> → 
+                            <span class="eq">9x = 7x - 16</span> → 
+                            <span class="soustraction">9x - 7x = 7x - 7x - 16</span> → 
+                            <span class="eq">2x = -16</span> → 
+                            <span class="fraction">
+                                <span class="top">2x</span>
+                                <span class="bottom">2</span>
+                            </span>
+                            = 
+                            <span class="fraction">
+                                <span class="top">-16</span>
+                                <span class="bottom">2</span>
+                            </span> → 
+                            <span class="resultat">x = -8</span>
+                        </div>
+
                     </div>
                 </div>
+            </div>
 
                 <div class="problem-section">
                     <h3>🎯 Problème 1 : Les âges</h3>
@@ -185,40 +295,242 @@
 
             <!-- FICHE 2 -->
             <div id="fiche2" class="tab-content">
-                <h2 style="color: #667eea; margin-bottom: 20px;">📝 Fiche 2 - Équations avancées</h2>
+                <h2 style="color: #667eea; margin-bottom: 20px;">📝 Fiche 2 - Équations plus avancées</h2>
                 
                 <div class="exercise">
-                    <h3>Exercice 1 : Équations avec fractions</h3>
-                    <div class="equation">a) (x + 5)/2 = 7</div>
-                    <div class="equation">b) (3x - 2)/4 = (x + 1)/2</div>
-                    <div class="equation">c) x/3 + x/4 = 14</div>
-                    <div class="equation">d) (2x + 3)/5 - (x - 1)/3 = 1</div>
+                    <h3>Exercice 1 : Équations plus difficiles</h3>
+                    <div class="equation">
+                        a) 12x + 15 = 27<br>
+                        x = <input type="number" id="rep9">
+                        <button onclick="verifier('rep9', 1, 'res9')">Vérifier</button>
+                        <span id="res9"></span>
+                    </div>
+
+                    <div class="equation">
+                        b) 7x - 18 = 5x + 22<br>
+                        x = <input type="number" id="rep10">
+                        <button onclick="verifier('rep10', -20, 'res10')">Vérifier</button>
+                        <span id="res10"></span>
+                    </div>
+
+                    <div class="equation">
+                        c) 9x + 12 = 6x - 3<br>
+                        x = <input type="number" id="rep11">
+                        <button onclick="verifier('rep11', -5, 'res11')">Vérifier</button>
+                        <span id="res11"></span>
+                    </div>
+
+                    <div class="equation">
+                        d) 11x - 8 = 4x + 19<br>
+                        x = <input type="number" id="rep12">
+                        <button onclick="verifier('rep12', 3, 'res12')">Vérifier</button>
+                        <span id="res12"></span>
+                    </div>
+
                     <button class="btn" onclick="toggleSolution('sol3')">Voir les solutions</button>
                     <div id="sol3" class="solution">
                         <h4>Solutions :</h4>
                         <div class="steps">
-                            <div class="step"><strong>a)</strong> x + 5 = 14 → <strong>x = 9</strong></div>
-                            <div class="step"><strong>b)</strong> 2(3x - 2) = 4(x + 1) → 6x - 4 = 4x + 4 → <strong>x = 4</strong></div>
-                            <div class="step"><strong>c)</strong> 4x + 3x = 168 → 7x = 168 → <strong>x = 24</strong></div>
-                            <div class="step"><strong>d)</strong> 3(2x + 3) - 5(x - 1) = 15 → 6x + 9 - 5x + 5 = 15 → <strong>x = 1</strong></div>
+
+                            <!-- a) -->
+                            <div class="step">
+                                <strong>a)</strong> 
+                                <span class="eq">12x + 15 = 27</span> → 
+                                <span class="soustraction">12x + 15 - 15 = 27 - 15</span> → 
+                                <span class="eq">12x = 12</span> → 
+                                <span class="fraction">
+                                    <span class="top">12x</span>
+                                    <span class="bottom">12</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">12</span>
+                                    <span class="bottom">12</span>
+                                </span> → 
+                                <span class="resultat">x = 1</span>
+                            </div>
+
+                            <!-- b) -->
+                            <div class="step">
+                                <strong>b)</strong> 
+                                <span class="eq">7x - 18 = 5x + 22</span> → 
+                                <span class="addition">7x - 18 + 18 = 5x + 22 + 18</span> → 
+                                <span class="eq">7x = 5x + 40</span> → 
+                                <span class="soustraction">7x - 5x = 5x - 5x + 40</span> → 
+                                <span class="eq">2x = 40</span> → 
+                                <span class="fraction">
+                                    <span class="top">2x</span>
+                                    <span class="bottom">2</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">40</span>
+                                    <span class="bottom">2</span>
+                                </span> → 
+                                <span class="resultat">x = -20</span>
+                            </div>
+
+                            <!-- c) -->
+                            <div class="step">
+                                <strong>c)</strong> 
+                                <span class="eq">9x + 12 = 6x - 3</span> → 
+                                <span class="soustraction">9x + 12 - 12 = 6x - 3 - 12</span> → 
+                                <span class="eq">9x = 6x - 15</span> → 
+                                <span class="soustraction">9x - 6x = 6x - 6x - 15</span> → 
+                                <span class="eq">3x = -15</span> → 
+                                <span class="fraction">
+                                    <span class="top">3x</span>
+                                    <span class="bottom">3</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">-15</span>
+                                    <span class="bottom">3</span>
+                                </span> → 
+                                <span class="resultat">x = -5</span>
+                            </div>
+
+                            <!-- d) -->
+                            <div class="step">
+                                <strong>d)</strong> 
+                                <span class="eq">11x - 8 = 4x + 19</span> → 
+                                <span class="addition">11x - 8 + 8 = 4x + 19 + 8</span> → 
+                                <span class="eq">11x = 4x + 27</span> → 
+                                <span class="soustraction">11x - 4x = 4x - 4x + 27</span> → 
+                                <span class="eq">7x = 27</span> → 
+                                <span class="fraction">
+                                    <span class="top">7x</span>
+                                    <span class="bottom">7</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">27</span>
+                                    <span class="bottom">7</span>
+                                </span> → 
+                                <span class="resultat">x = 3</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="exercise">
-                    <h3>Exercice 2 : Équations complexes</h3>
-                    <div class="equation">a) 4(2x - 1) + 3(x + 2) = 5x - 2</div>
-                    <div class="equation">b) 7x - 2(3x + 5) = 4(x - 3)</div>
-                    <div class="equation">c) 3(x - 4) - 2(2x + 1) = x - 18</div>
-                    <div class="equation">d) 5(x + 1) - 2(3x - 4) = 7 - (x - 2)</div>
+                    <h3>Exercice 2 : Équations encore plus difficiles</h3>
+
+                    <div class="equation">
+                        a) 13x + 7 = 8x - 12<br>
+                        x = <input type="number" id="rep13">
+                        <button onclick="verifier('rep13', -19/5, 'res13')">Vérifier</button>
+                        <span id="res13"></span>
+                    </div>
+
+                    <div class="equation">
+                        b) 15x - 9 = 10x + 21<br>
+                        x = <input type="number" id="rep14">
+                        <button onclick="verifier('rep14', 10, 'res14')">Vérifier</button>
+                        <span id="res14"></span>
+                    </div>
+
+                    <div class="equation">
+                        c) 14x + 16 = 9x - 8<br>
+                        x = <input type="number" id="rep15">
+                        <button onclick="verifier('rep15', -8, 'res15')">Vérifier</button>
+                        <span id="res15"></span>
+                    </div>
+
+                    <div class="equation">
+                        d) 16x - 5 = 11x + 13<br>
+                        x = <input type="number" id="rep16">
+                        <button onclick="verifier('rep16', 6, 'res16')">Vérifier</button>
+                        <span id="res16"></span>
+                    </div>
+
                     <button class="btn" onclick="toggleSolution('sol4')">Voir les solutions</button>
+
                     <div id="sol4" class="solution">
                         <h4>Solutions :</h4>
                         <div class="steps">
-                            <div class="step"><strong>a)</strong> 8x - 4 + 3x + 6 = 5x - 2 → 6x = -4 → <strong>x = -2/3</strong></div>
-                            <div class="step"><strong>b)</strong> 7x - 6x - 10 = 4x - 12 → -3x = -2 → <strong>x = 2/3</strong></div>
-                            <div class="step"><strong>c)</strong> 3x - 12 - 4x - 2 = x - 18 → -2x = -4 → <strong>x = 2</strong></div>
-                            <div class="step"><strong>d)</strong> 5x + 5 - 6x + 8 = 7 - x + 2 → 0x = -4 → <strong>Impossible!</strong></div>
+
+                            <!-- a) -->
+                            <div class="step">
+                                <strong>a)</strong> 
+                                <span class="eq">13x + 7 = 8x - 12</span> → 
+                                <span class="soustraction">13x + 7 - 7 = 8x - 12 - 7</span> → 
+                                <span class="eq">13x = 8x - 19</span> → 
+                                <span class="soustraction">13x - 8x = 8x - 8x - 19</span> → 
+                                <span class="eq">5x = -19</span> → 
+                                <span class="fraction">
+                                    <span class="top">5x</span>
+                                    <span class="bottom">5</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">-19</span>
+                                    <span class="bottom">5</span>
+                                </span> → 
+                                <span class="resultat">x = -19/5</span>
+                            </div>
+
+                            <!-- b) -->
+                            <div class="step">
+                                <strong>b)</strong> 
+                                <span class="eq">15x - 9 = 10x + 21</span> → 
+                                <span class="addition">15x - 9 + 9 = 10x + 21 + 9</span> → 
+                                <span class="eq">15x = 10x + 30</span> → 
+                                <span class="soustraction">15x - 10x = 10x - 10x + 30</span> → 
+                                <span class="eq">5x = 30</span> → 
+                                <span class="fraction">
+                                    <span class="top">5x</span>
+                                    <span class="bottom">5</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">30</span>
+                                    <span class="bottom">5</span>
+                                </span> → 
+                                <span class="resultat">x = 10</span>
+                            </div>
+
+                            <!-- c) -->
+                            <div class="step">
+                                <strong>c)</strong> 
+                                <span class="eq">14x + 16 = 9x - 8</span> → 
+                                <span class="soustraction">14x + 16 - 16 = 9x - 8 - 16</span> → 
+                                <span class="eq">14x = 9x - 24</span> → 
+                                <span class="soustraction">14x - 9x = 9x - 9x - 24</span> → 
+                                <span class="eq">5x = -24</span> → 
+                                <span class="fraction">
+                                    <span class="top">5x</span>
+                                    <span class="bottom">5</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">-24</span>
+                                    <span class="bottom">5</span>
+                                </span> → 
+                                <span class="resultat">x = -8</span>
+                            </div>
+
+                            <!-- d) -->
+                            <div class="step">
+                                <strong>d)</strong> 
+                                <span class="eq">16x - 5 = 11x + 13</span> → 
+                                <span class="addition">16x - 5 + 5 = 11x + 13 + 5</span> → 
+                                <span class="eq">16x = 11x + 18</span> → 
+                                <span class="soustraction">16x - 11x = 11x - 11x + 18</span> → 
+                                <span class="eq">5x = 18</span> → 
+                                <span class="fraction">
+                                    <span class="top">5x</span>
+                                    <span class="bottom">5</span>
+                                </span>
+                                = 
+                                <span class="fraction">
+                                    <span class="top">18</span>
+                                    <span class="bottom">5</span>
+                                </span> → 
+                                <span class="resultat">x = 6</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
